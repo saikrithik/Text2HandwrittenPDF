@@ -5,7 +5,7 @@ Here is my version of project on Text to Handwritten PDF generator. \
 Use Anaconda for better experience:
 1. create a virtual environment (Recommended)
 ```cmd
-conda create -n environment_name python=3.7
+conda create -n environment_name python=3.6
 ```
 2. activate virtual environment
 ```cmd
