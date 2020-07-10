@@ -1,6 +1,5 @@
 from PIL import Image
 from fpdf import FPDF
-from PIL import Image
 import os
 import re, os.path
 import cv2
