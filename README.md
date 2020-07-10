@@ -16,10 +16,10 @@ conda activate environment_name
 pip install -r requirement.txt
 ```
 #### Usage Guide.
-##### 1. Capturing Handwritten Letters in Office Lens(B/W filter):
+##### 1. Capturing Handwritten Letters in Office Lens(B/W filter): [LINK](https://play.google.com/store/apps/details?id=com.microsoft.office.officelens&hl=en_IN)
 <img src="utils/LensB-W.jpeg" style="float: center;" width="250">
 
-- Store the images in the directory as letters.jpg
+- Store the image in the directory as letters.jpg
 
 ##### 2. Run Crop_letters.py to crop ur own letters.
 <img src="utils/cropping.png" style="float: center;">
