@@ -1,6 +1,6 @@
 # Text2HandwrittenPDF
-Here is myversion project on Text to Handwritten PDF generator.
-**Theme** : Making students and employees to make their own handwritng based text generation.\
+Here is my version of project on Text to Handwritten PDF generator. \
+**Theme** : Making students and employees to make their own handwritng based text generation.
 #### INSTALLATION GUIDE:
 Use Anaconda for better experience:
 1. create a virtual environment (Recommended)
