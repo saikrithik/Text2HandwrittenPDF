@@ -43,7 +43,7 @@ pip install -r requirement.txt
 - It asks no. of words you want per page.(it depends on ur cropped image pixels so choose the one which suits you :) )
 - Your pdf is ready :) , You can also get the images from imageout folder
 
-## Results
+## Results:
 <img src="utils/ip-op.png"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />
