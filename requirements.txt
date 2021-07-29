@@ -1,5 +1,5 @@
 fpdf==1.7.2
 numpy==1.19.0
 opencv-contrib-python
-Pillow==7.1.2
+Pillow==7
 
