@@ -3,13 +3,20 @@ from fpdf import FPDF
 import os
 import re, os.path
 import cv2
-
+import Augumentation
 import time
 import sys
+import random
+import numpy as np
+import cv2
+import math
+import random
+import copy
 animation = "|/-\\"
-
-
-#checking if there are existing files in imageout directory
+angle_thresh = 10
+zoom_thresh_down = 0.9
+zoom_thresh_up = 1.1
+translation_thresh = 0.15
 #Deleting them if they exist
 mypath = "imageout"
 for root, dirs, files in os.walk(mypath):
@@ -31,7 +38,15 @@ def write(char):
         pass
     else:
         char.lower()
-        cases = Image.open("letterimages/%s.png" % char)
+        cases = cv2.imread("letterimages/%s.png" % char)
+        rand_angle = int(random.uniform(-angle_thresh, angle_thresh))
+        cases = Augumentation.rotate_image(cases,rand_angle)
+        cases = Augumentation.zoom(cases,zoom_thresh_up,zoom_thresh_down)
+        rows, cols = cases.shape[:2]
+        pixel = int(rows*translation_thresh)
+        cases = Augumentation.translation(cases,pixel)
+        cases = cv2.cvtColor(cases, cv2.COLOR_BGR2RGB)  
+        cases = Image.fromarray(cases)
         BG.paste(cases, (gap, _))
         size = cases.width
         gap += size
