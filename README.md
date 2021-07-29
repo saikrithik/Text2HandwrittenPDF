@@ -51,5 +51,5 @@ pip install -r requirement.txt
 This idea is taken from : [reference](https://github.com/sharanya02/Text-file-to-handwritten-pdf-file)
 ### This project is open for contribution :)
 ### Features need to be added:
-1. Augumenting the cropped image data randomly to make it look real
+1. Augumenting the cropped image data randomly to make it look real (#Done 29-07-2021)
 2. Paragraphs mapping on the text.
